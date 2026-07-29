@@ -20,9 +20,7 @@ class Solution {
         return list;
     }
     void PreOrder(List<Integer>list,TreeNode root){
-        if(root==null){
-            return;
-        }
+        if(root==null)return;
         list.add(root.val);
         PreOrder(list,root.left);
         PreOrder(list,root.right);
